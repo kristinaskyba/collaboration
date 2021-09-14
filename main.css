@@ -223,6 +223,9 @@
   
   /*початок продуктових карток*/
   
+  body{
+    background-color: #F9F9F9;
+  }
   .headline {
     display: flex;
     flex-direction: column;
