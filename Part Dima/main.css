@@ -1,0 +1,387 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  /* font-size: 100%; */
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+
+/* "Початок" Блок з відгуками response */
+
+body {
+  width: 1260px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: #E5E5E5;
+}
+
+.response__arrow-left {
+  position: absolute;
+  width: 88px;
+  height: 227px;
+  left: 0;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  z-index: 1;
+}
+
+.response__arrow-right {
+  position: absolute;
+  width: 88px;
+  height: 227px;
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+  z-index: 1;
+}
+
+.response__arrow-right_svg-box {
+  position: absolute;
+  top: 28.85%;
+  z-index: 2;
+  right: 0;
+}
+
+.response__arrow-left_svg-box {
+  position: absolute;
+  top: 28.85%;
+  z-index: 2;
+  left: 0;
+}
+
+.sectuon-header {
+  padding: 64px 45px 32px 45px;
+  display: flex;
+}
+
+.sectuon-header .button-right {
+  display: inline;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  padding: 0 18px 0 0;
+  background-color: transparent;
+}
+
+.sectuon-header .button-right:hover {
+  text-shadow: 2px 2px 2px darkblue;
+}
+
+.response {
+  background-color: #F9F9F9;
+}
+
+.response_slider-bar {
+  display: flex;
+  flex-direction: row;
+  width: 1260px;
+  overflow: hidden;
+  justify-content: center;
+  position: relative;
+}
+
+.sectuon-header h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  flex-grow: 1;
+}
+
+.response__section-title {}
+
+/*кінець відгуків*/
+
+/*початок продуктових карток*/
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: #F9F9F9;
+}
+
+.headline__product-card-section {
+  height: 332px;
+  display: flex;
+  flex-direction: row;
+  width: 1170px;
+}
+
+body .headline .headline__product-card-section {
+  padding-left: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
+body .headline .headline__product-card-section .headline__product-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px 0 16px;
+}
+
+body .headline .headline__product-card-section:first-child {
+  padding-left: 0px;
+}
+
+/* "Початок" Цитати покупців."Srart" Customer quot */
+
+body .textbox-customer-quot-wrap {
+  height: 222px;
+  width: 369px;
+  margin: 0 16px 0 16px;
+}
+
+.textbox-customer-quot {
+  width: 369px;
+  height: 198px;
+  border-radius: 12px;
+  border: 1px solid #F1F1F1;
+  display: block;
+  padding: 24px 32px 0px 32px;
+  text-align: center;
+  position: relative;
+}
+
+.textbox-customer-quot__customer-quot {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+
+.textbox-customer-quot__decorSVG {
+  position: absolute;
+  bottom: 0px;
+  transform: translate(-50%, 50%);
+}
+
+/*product-card text style*/
+
+.textbox-customer-quot-wrap .customer-quot__customer-name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #A9A9A9;
+  padding: 16px 0 0 0;
+}
+
+/* "Кінець " Цитати покупців."End" Customer quotes */
+
+/* "Початок" Картка продукта без знижки ."Srart" product-card without discount */
+
+body .product-card {
+  position: relative;
+  width: 268px;
+  height: 323px;
+  border-radius: 12px;
+  border: 1px solid #D1D1D1;
+  display: block;
+  padding: 16px 16px 16px 16px;
+}
+
+body .product-card .product-card__image {
+  margin: 0px 0px 16px -1px;
+  width: 236px;
+  height: 180px;
+  border-radius: 12px;
+  margin: 0 0 16px 0;
+}
+
+body .product-card .product-card__title {
+  display: block;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  margin: 0;
+}
+
+body .product-card .product-card__description {
+  display: block;
+  overflow: hidden;
+  max-height: 32px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: regular;
+  font-size: 12px;
+  line-height: 16px;
+  color: #575757;
+}
+
+body .product-card .product-card__button-wrap {
+  display: block;
+  margin: -30px 0 0 145px;
+}
+
+body .product-card .product-card__price {
+  display: block;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #151515;
+  margin-top: 15px;
+}
+
+body .product-card .product-card__button {
+  width: 90px;
+  height: 36px;
+  border-radius: 12px;
+  color: #FFFFFF;
+  background-color: #6A983C;
+  font-family: Poppins;
+  border: 2px solid #46760A;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+
+.discount-percent {
+  position: absolute;
+  background: #F4F8EC;
+  border-radius: 12px;
+  top: 28px;
+  left: 28px;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  width: auto;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6A983C;
+}
+
+.bottom-product-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-product-card__prices {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-card__price {
+  width: auto;
+}
+
+.bottom-product-card__button-wrap {
+  display: flex;
+  margin: 12px 0 0 0;
+}
+
+.product-card__button-discount {
+  width: 90px;
+  height: 36px;
+  border-radius: 12px;
+  color: #FFFFFF;
+  background-color: #6A983C;
+  font-family: Poppins;
+  border: 2px solid #46760A;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+
+.product-card__original-price {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #A9A9A9;
+  text-decoration-line: line-through;
+}
+
+/* "Закінчення" Картка продукта без знижки ."END" product-card without discount */
